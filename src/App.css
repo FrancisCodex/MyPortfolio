@@ -1,0 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        padding: 60px 0;
+    }
+}

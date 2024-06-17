@@ -6,8 +6,8 @@ export default function Navbar() {
   const { dropdownRef, isOpen, setIsOpen } = useDropdownToggle();
 
   return (
-    <div>
-      <div className="navbar bg-base-100 fixed top-0">
+    <div className=''>
+      <div className="navbar bg-base-100 fixed top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown lg:hidden" ref={dropdownRef}>
             <div tabIndex={0} role="button" className="btn btn-ghost" onClick={() => setIsOpen(!isOpen)}>
@@ -15,21 +15,19 @@ export default function Navbar() {
             </div>
             {isOpen && (
               <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold text-lg">
-                <li><a href="/about">About</a></li>
-                <li><a href="/resume">Resume</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             )}
           </div>
-          <a className="btn btn-ghost text-xl">Francis;</a>
+          <a className="btn btn-ghost text-xl" href='/'>Francis<span className='text-green-500 space-x-0'>;</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal font-bold text-lg">
-            <li><a href="/about">About</a></li>
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div className="navbar-end">
