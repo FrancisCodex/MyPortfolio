@@ -1,11 +1,9 @@
 import React from 'react'
+import { skills } from './skills'
 import './about.css'
 
 export default function Aboutme() {
-    const skills = [
-        "JavaScript", "React", "Node.js", "CSS", "HTML",
-        "Git", "Redux", "TypeScript", "Express", "MongoDB"
-      ];
+
       
   return (
       <>
@@ -28,11 +26,14 @@ export default function Aboutme() {
             enthusiastic about pushing the boundaries of what's possible in
             the digital landscape.
             </p>
+
+            <h2 className='font-bold text-2xl mt-4'>My Skills: </h2>
             {/* Skills Here */}
-            <div className="skills-grid grid grid-cols-2 md:grid-cols-5 md:max-w-5xl gap-4 mt-4 max-w-sm">
+            <div className="skills-grid grid grid-cols-2 md:grid-cols-7 md:max-w-5xl gap-4 mt-4 max-w-sm">
             {skills.map(skill => (
-                <div key={skill} className="skill-item text-center p-2 border border-gray-200 rounded shadow">
-                {skill}
+                <div key={skill.id} className="transition ease-in-out delay-150 duration-300 hover:scale-125 flex flex-row justify-center items-center text-center p-2 m-1"> {/* Changed flex-row to flex-col for vertical alignment */}
+                <img src={skill.image} alt={skill.name} className="w-7 object-cover mr-2" /> {/* Image added here */}
+                {skill.name}
                 </div>
             ))}
             </div>

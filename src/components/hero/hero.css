@@ -1,0 +1,15 @@
+@keyframes bounceAndRotate {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0) rotate(140deg);
+    }
+    40% {
+      transform: translateY(-30px) rotate(140deg);
+    }
+    60% {
+      transform: translateY(-15px) rotate(140deg);
+    }
+  }
+  
+  .curly-arrow {
+    animation: bounceAndRotate 2s infinite;
+  }

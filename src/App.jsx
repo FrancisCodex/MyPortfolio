@@ -7,6 +7,8 @@ import About from './components/about/about'
 import Projects from './components/projects/projects'
 import Contact from './components/contact/contact'
 import Aboutme from './components/about/aboutme'
+import { Projects2 } from './components/projects/projects2'
+import Projects3 from './components/projects/projects3'
 
 function App() {
 
@@ -29,19 +31,15 @@ function App() {
         </section>
         
         <section className='flex flex-col' id='projects'>
-        <div className='lg:ml-80 ml-6 font-bold text-3xl lg:text-6xl pb-5'>
-            <h1>projects.</h1>
-          </div>
-        <div className='hero '>
-          <Projects />
+        <div className=''>
+          {/* <Projects /> */}
+          {/* <Projects2 /> */}
+          <Projects3 />
           </div>
         </section>
-
+        
         <section className='flex flex-col' id='contact'>
-        <div className='lg:ml-80 ml-6 font-bold text-3xl lg:text-6xl pb-5'>
-            <h1>contact.</h1>
-          </div>
-        <div className='hero '>
+        <div className=''>
           <Contact />
           </div>
         </section>

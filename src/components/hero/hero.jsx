@@ -1,5 +1,7 @@
 import React from 'react'
-
+import arrow from '../../assets/curlyarrow.svg'
+import './hero.css'
+import Resume from '../../assets/files/Altesing_Resume.pdf'
 export default function Hero() {
   return (
       <div>
@@ -7,7 +9,7 @@ export default function Hero() {
         <div className="hero-content text-center">
             <div className="max-w-2xl">
             <h1 className="text-5xl font-bold">Hello, I'm Francis;</h1>
-            <p className="py-6 font-semibold">I am a Full Stack Developer and an aspiring Entreprenuer</p>
+            <p className="py-6 text-md font-semibold">I'm a Full Stack Developer from the Philippines</p>
                 <div className="py-6 flex justify-center">
                     <a href="https://github.com/FrancisCodex" className='btn btn-ghost flex items-center space-x-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 192 192" fill="none" stroke='currentColor'>
@@ -32,7 +34,8 @@ export default function Hero() {
                         </a>
                 </div>
             <div className="py-6">
-                <button className="btn btn-primary">About me</button>
+            <img src={arrow} alt="Arrow" className='curly-arrow ml-20' width="50" height="50"/>
+            <a href={Resume} className="btn btn-primary" download="Resume_Altesing.pdf">My Resume</a>
             </div>  
             </div>
         </div>
