@@ -1,6 +1,7 @@
 import React from 'react'
 import { skills } from './skills'
 import './about.css'
+import Profile from '../../assets/profile.jpg'
 
 export default function Aboutme() {
 
@@ -39,7 +40,7 @@ export default function Aboutme() {
             </div>
         </div>
         <div className='w-full hidden lg:block'>
-            <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/343396905_230284759653053_5545448212887847878_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEPeKFoz3iS94in9rw1Zv31GC48u2MvzRUYLjy7Yy_NFXYxX1bg_BwD-kRu8POZOTWTqwvFlenk7eSRA1rJkhDi&_nc_ohc=UXLXHrrXJlgQ7kNvgHuftGR&_nc_ht=scontent.fdvo2-2.fna&oh=00_AYC6y0i-zUaeXZLWSmJ-tQDuSR9tkUrFqTxftt8AdBCgkw&oe=6675A263" className="w-[250px] lg:w-[300px] mx-auto my-10 p-0 rounded-md"/>
+            <img src={Profile} className="w-[250px] lg:w-[300px] mx-auto my-10 p-0 rounded-md"/>
         </div>
         </div>
       </>
